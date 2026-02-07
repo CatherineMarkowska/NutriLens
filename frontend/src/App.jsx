@@ -2,11 +2,12 @@ import { useState } from 'react'
 import './App.css'
 import Tile from './components/Tile'
 import Era from './components/Era'
-import StoryScene from './components/StoryScene'
+import RoleSelect from './components/RoleSelect'
+
 
 
 function App() {
-  const [view, setView] = useState('home') // home | era | story
+  const [view, setView] = useState('home') // home | era | roles | story
   const eras = [
     {
       title: 'The Great Depression',
@@ -100,9 +101,11 @@ function App() {
         </section>
       )}
 
-      {view === 'era' && <Era onStart={() => setView('story')} />}
+      {view === 'era' && <Era onStart={() => setView('roles')} />}
 
-      {view === 'story' && <StoryScene onBack={() => setView('era')} />}
+      {view === 'roles' && <RoleSelect onChoose={() => setView('story')} />}
+
+      {view === 'story' && <StoryScene onBack={() => setView('roles')} />}
     </div>
   )
 }

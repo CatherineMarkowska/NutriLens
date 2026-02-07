@@ -12,7 +12,7 @@ function Era({ onStart }) {
   return (
     <section className="era-page">
       <div>
-        <h2>The chapter</h2>
+        <h2>The chapters</h2>
       </div>
 
       <div className="era-list">
