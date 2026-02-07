@@ -1,0 +1,87 @@
+.tile {
+  background: rgba(18, 18, 18, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-height: 0;
+  min-width: 150px;
+  flex: 1 1 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.tile-image {
+  position: relative;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px 16px 0 0;
+  padding: 0.75rem;
+  display: flex;
+  align-items: flex-start;
+  background-color: #111;
+}
+
+.tile-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+}
+
+.tile-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.7rem;
+  color: rgba(246, 241, 231, 0.7);
+  position: relative;
+  z-index: 1;
+}
+
+.tile-logo {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  background: rgba(241, 178, 92, 0.9);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1rem;
+}
+
+.tile-content {
+  padding: 0 1rem;
+}
+
+.tile-content h4 {
+  font-size: 1.2rem;
+  margin: 0 0 0.25rem;
+}
+
+.tile-content p {
+  color: rgba(246, 241, 231, 0.65);
+  margin: 0;
+}
+
+.tile-meta {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(246, 241, 231, 0.5);
+  margin-top: 0.5rem;
+}
+
+.tile-btn {
+  margin-top: auto;
+  width: 100%;
+  margin-bottom: 1rem;
+  align-self: center;
+  max-width: 90%;
+}
