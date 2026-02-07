@@ -161,11 +161,7 @@
 }
 
 .now-showing {
-<<<<<<< HEAD
   padding: 1.5rem 5vw 1rem;
-=======
-  padding: 2.5rem 5vw 3rem;
->>>>>>> 4df0a577e01865d5c4622834ffe1847744be52b3
   display: flex;
   flex-direction: column;
   min-height: 0;
@@ -329,15 +325,12 @@
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-<<<<<<< HEAD
 
 
 
 
-=======
-<<<<<<< HEAD
-=======
->>>>>>> tan-branch
+
+
 .early-access {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -413,7 +406,7 @@
   font-weight: 600;
 }
 
->>>>>>> 4df0a577e01865d5c4622834ffe1847744be52b3
+
 .how-it-works {
   padding: 2.5rem 5vw 3rem;
   display: flex;
@@ -544,14 +537,11 @@
     padding: 1rem 5vw;
   }
 
-<<<<<<< HEAD
-=======
   .home-actions {
     flex-direction: column;
     align-items: flex-start;
   }
 
->>>>>>> 4df0a577e01865d5c4622834ffe1847744be52b3
   .how-actions {
     flex-direction: column;
     align-items: flex-start;
