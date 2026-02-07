@@ -22,7 +22,7 @@ function App() {
       description:
         'Witness the rebirth of art, science, and humanism as Europe transforms.',
       status: 'soon',
-      image: 'https://images.unsplash.com/photo-1549893074-6a5f6aab8c8b',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/2/25/Sandro_Botticelli_-_Idealized_Portrait_of_a_Lady_%28Portrait_of_Simonetta_Vespucci_as_Nymph%29_-_Google_Art_Project.jpg',
     },
     {
       title: 'American Revolution',
@@ -31,7 +31,7 @@ function App() {
       description:
         'Stand at the edge of independence as colonies fight to form a nation.',
       status: 'soon',
-      image: 'https://images.unsplash.com/photo-1580136579312-94651dfd596d',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/f/f9/Declaration_of_Independence_%281819%29%2C_by_John_Trumbull.jpg',
     },
     {
       title: 'Industrial Revolution',
@@ -40,7 +40,7 @@ function App() {
       description:
         'Factories rise, cities expand, and society reshapes around machines.',
       status: 'soon',
-      image: 'https://images.unsplash.com/photo-1520974735194-24e6e8b1bfb4',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Powerloom_weaving_in_1835.jpg/960px-Powerloom_weaving_in_1835.jpg',
     },
     {
       title: 'Roaring Twenties',
@@ -49,7 +49,7 @@ function App() {
       description:
         'Jazz, prohibition, and economic boom before the crash that changed everything.',
       status: 'soon',
-      image: 'https://images.unsplash.com/photo-1541976076758-347942db1979',
+      image: 'https://cdn.britannica.com/28/43428-050-2FD5E1F2/Charleston-cover-Life-John-Held-Jr-1926.jpg',
     },
     {
       title: 'The Great Depression',
