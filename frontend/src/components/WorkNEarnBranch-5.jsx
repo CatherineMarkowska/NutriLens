@@ -21,7 +21,7 @@ function WorkNEarnBranch5({ onNext }) {
           <h3>Your Status</h3>
           <div>
             <p>Savings</p>
-            <strong>$1,200</strong>
+            <strong>$3</strong>
           </div>
           <div>
             <p>Employment</p>
@@ -29,7 +29,7 @@ function WorkNEarnBranch5({ onNext }) {
           </div>
           <div>
             <p>Family Morale</p>
-            <strong>Stable</strong>
+            <strong>Struggling</strong>
           </div>
         </aside>
       </div>
@@ -50,8 +50,8 @@ function WorkNEarnBranch5({ onNext }) {
         <button type="button" onClick={onNext}>
           Try one last time—check the help-wanted ads
         </button>
-        <button type="button">Choice 2</button>
-        <button type="button">Choice 3</button>
+        <button type="button">Sleep in the train yard.</button>
+        <button type="button">Take work under a false name.</button>
       </div>
     </section>
   )

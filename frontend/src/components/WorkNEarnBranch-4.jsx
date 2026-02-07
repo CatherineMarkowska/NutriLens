@@ -21,7 +21,7 @@ function WorkNEarnBranch4({ onNext }) {
           <h3>Your Status</h3>
           <div>
             <p>Savings</p>
-            <strong>$1,200</strong>
+            <strong>$0</strong>
           </div>
           <div>
             <p>Employment</p>
@@ -29,7 +29,7 @@ function WorkNEarnBranch4({ onNext }) {
           </div>
           <div>
             <p>Family Morale</p>
-            <strong>Stable</strong>
+            <strong>Despair</strong>
           </div>
         </aside>
       </div>
@@ -50,8 +50,8 @@ function WorkNEarnBranch4({ onNext }) {
         <button type="button" onClick={onNext}>
           Apply for every job in the newspaper, no matter how degrading
         </button>
-        <button type="button">Choice 2</button>
-        <button type="button">Choice 3</button>
+        <button type="button">Stand in the breadline at dawn.</button>
+        <button type="button">Break into the abandoned warehouse.</button>
       </div>
     </section>
   )

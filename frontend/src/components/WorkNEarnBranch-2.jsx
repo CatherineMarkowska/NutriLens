@@ -21,7 +21,7 @@ function WorkNEarnBranch2({ onNext }) {
           <h3>Your Status</h3>
           <div>
             <p>Savings</p>
-            <strong>$1,200</strong>
+            <strong>$50</strong>
           </div>
           <div>
             <p>Employment</p>
@@ -29,7 +29,7 @@ function WorkNEarnBranch2({ onNext }) {
           </div>
           <div>
             <p>Family Morale</p>
-            <strong>Stable</strong>
+            <strong>Struggling</strong>
           </div>
         </aside>
       </div>
@@ -48,10 +48,10 @@ function WorkNEarnBranch2({ onNext }) {
 
       <div className="bank-clerk__choices">
         <button type="button" onClick={onNext}>
-          sell your furniture to pay for your brother's medicine!
+          Sell your furniture to pay for your brother's medicine!
         </button>
-        <button type="button">Choice 2</button>
-        <button type="button">Choice 3</button>
+        <button type="button">Let them keep working.</button>
+        <button type="button">Tell them to quit.</button>
       </div>
     </section>
   )

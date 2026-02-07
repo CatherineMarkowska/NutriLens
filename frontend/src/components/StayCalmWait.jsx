@@ -23,7 +23,7 @@ function StayCalmWait({ onWorkEarn }) {
           <h3>Your Status</h3>
           <div>
             <p>Savings</p>
-            <strong>$1200</strong>
+            <strong>$1300</strong>
           </div>
           <div>
             <p>Employment</p>
@@ -47,7 +47,7 @@ function StayCalmWait({ onWorkEarn }) {
 
 
       <div className="stay-calm__status">
-        <p>Savings: $1200</p>
+        <p>Savings: $1,300</p>
         <p>Employment: Bank Clerk</p>
         <p>Family Moral: Stable</p>
       </div>

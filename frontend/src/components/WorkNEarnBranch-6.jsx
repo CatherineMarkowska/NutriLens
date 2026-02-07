@@ -21,7 +21,7 @@ function WorkNEarnBranch6({ onNext }) {
           <h3>Your Status</h3>
           <div>
             <p>Savings</p>
-            <strong>$1,200</strong>
+            <strong>$15</strong>
           </div>
           <div>
             <p>Employment</p>
@@ -29,7 +29,7 @@ function WorkNEarnBranch6({ onNext }) {
           </div>
           <div>
             <p>Family Morale</p>
-            <strong>Stable</strong>
+            <strong>Stable-ish?</strong>
           </div>
         </aside>
       </div>

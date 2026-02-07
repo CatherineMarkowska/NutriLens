@@ -21,7 +21,7 @@ function WorkNEarnBranch3({ onNext }) {
           <h3>Your Status</h3>
           <div>
             <p>Savings</p>
-            <strong>$1,200</strong>
+            <strong>$8</strong>
           </div>
           <div>
             <p>Employment</p>
@@ -29,7 +29,7 @@ function WorkNEarnBranch3({ onNext }) {
           </div>
           <div>
             <p>Family Morale</p>
-            <strong>Stable</strong>
+            <strong>Struggling</strong>
           </div>
         </aside>
       </div>
@@ -50,8 +50,8 @@ function WorkNEarnBranch3({ onNext }) {
         <button type="button" onClick={onNext}>
           Use the $8 for medicine and wear every piece of clothing you own
         </button>
-        <button type="button">Choice 2</button>
-        <button type="button">Choice 3</button>
+        <button type="button">Pawn your wedding ring.</button>
+        <button type="button">Send your brother to a relief line.</button>
       </div>
     </section>
   )
