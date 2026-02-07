@@ -4,13 +4,15 @@ import Tile from './components/Tile'
 import Era from './components/Era'
 import RoleSelect from './components/RoleSelect'
 import BankClerkPath from './components/BankClerkPath'
-
 import StayCalmWait from './components/StayCalmWait'
+import WorkNEarn from './components/WorkNEarn'
 
 
 
 function App() {
-  const [view, setView] = useState('home') // home | era | roles | story | bank-clerk
+  const [view, setView] = useState('home') // home | now | how | stories | era | roles | bank-clerk | stay-calm | work-earn | story
+  const [ticketEmail, setTicketEmail] = useState('')
+  const [ticketPurchased, setTicketPurchased] = useState(false)
   const eras = [
     {
       title: 'The Great Depression',
@@ -20,7 +22,7 @@ function App() {
         'Step into the era of breadlines and dust storms as families fight to endure. Follow everyday lives shaped by hardship, resilience, and hope.',
       status: 'start',
       image:
-        'https://unsplash.com/photos/man-in-black-and-red-jacket-holding-brown-wooden-stick-rJ6tenVnp9A',
+        'https://images.unsplash.com/photo-1587553906014-b2b4060dd6f5?q=80&w=980&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
       title: 'World War II',
@@ -30,7 +32,7 @@ function App() {
         'Move through the global conflict that reshaped nations and generations. Experience the home front, the front lines, and the choices in between.',
       status: 'soon',
       image:
-        'https://unsplash.com/photos/three-monoplanes-squadron-in-world-war-2-oyGmigXV030',
+        'https://images.unsplash.com/photo-1571840933517-88a527cd7008?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
       title: 'Apollo 11: Moon Landing',
@@ -40,7 +42,7 @@ function App() {
         'Relive the race to the moon and the tension inside Mission Control. Discover the courage and innovation behind one giant leap.',
       status: 'soon',
       image:
-        'https://unsplash.com/photos/buzz-aldrin-on-the-moon-in-front-of-the-us-flag-UeSpvB0Qo88',
+        'https://images.unsplash.com/photo-1614726365930-627c75da663e?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
     {
       title: 'Fall of the Berlin Wall',
@@ -60,7 +62,7 @@ function App() {
         'Enter the tense hours after the reactor failure and the race to contain it. See the human cost and the bravery that followed.',
       status: 'soon',
       image:
-        'https://unsplash.com/photos/yellow-and-black-house-on-brown-grass-field-q-QZw_s97Oc',
+        'https://images.unsplash.com/photo-1590355200067-675cf378fb74?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       },
     {
       title: 'Civil Rights Movement',
@@ -70,7 +72,7 @@ function App() {
         'Walk alongside organizers, students, and leaders in the fight for justice. From sit-ins to marches, courage builds a new future.',
       status: 'soon',
       image:
-        'https://unsplash.com/photos/civil-rights-march-on-washington-dc-WzPxmB_tRlw',
+        'https://images.unsplash.com/photo-1576568699714-a3f4950805d5?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     },
   ]
   const nowShowing = eras.filter((era) => era.status === 'start')
@@ -79,17 +81,13 @@ function App() {
   return (
     <div className="app">
       <div className="promo-bar">
-<<<<<<< HEAD
-        Get Tickets to see The Great Depression at our Early Access Event on 2/7 and score a Roar Pack!
-=======
         Get tickets to see The Great Depression at our Early Access Event on {earlyAccessDate} and score a Roar Pack!
->>>>>>> 4df0a577e01865d5c4622834ffe1847744be52b3
       </div>
       <header className="site-header">
         <div className="logo">
           <img
             className="logo-icon"
-            src="https://www.123rf.com/photo_63402711_film-clap-board-cinema-sign-white-icon-on-red-circle.html"
+            src="https://previews.123rf.com/images/asmati/asmati1610/asmati161000088/63402711-film-clap-board-cinema-sign-white-icon-on-red-circle.jpg"
             alt="Film icon"
           />
           <div>
@@ -100,13 +98,6 @@ function App() {
           <button className="ghost-btn" type="button" onClick={() => setView('home')}>
             Home
           </button>
-<<<<<<< HEAD
-          <a href="#now">Now Showing</a>
-          <button className="ghost-btn" type="button" onClick={() => setView('how')}>
-            How It Works
-          </button>
-          <a href="#stories">Stories</a>
-=======
           <button className="ghost-btn" type="button" onClick={() => setView('now')}>
             Now Showing
           </button>
@@ -116,7 +107,6 @@ function App() {
           <button className="ghost-btn" type="button" onClick={() => setView('stories')}>
             Stories
           </button>
->>>>>>> 4df0a577e01865d5c4622834ffe1847744be52b3
         </nav>
       </header>
 
@@ -238,11 +228,7 @@ function App() {
               story, your relationships, and the outcome.
             </p>
             <div className="how-actions">
-<<<<<<< HEAD
-              <button className="primary-btn" type="button" onClick={() => setView('era')}>
-=======
               <button className="primary-btn" type="button" onClick={() => setView('now')}>
->>>>>>> 4df0a577e01865d5c4622834ffe1847744be52b3
                 Get Tickets
               </button>
               <button className="ghost-btn" type="button" onClick={() => setView('home')}>
@@ -318,7 +304,9 @@ function App() {
 
       {view === 'bank-clerk' && <BankClerkPath onStayCalm={() => setView('stay-calm')} />}
 
-      {view === 'stay-calm' && <StayCalmWait />}
+      {view === 'stay-calm' && <StayCalmWait onWorkEarn={() => setView('work-earn')} />}
+
+      {view === 'work-earn' && <WorkNEarn />}
 
       {view === 'story' && <StoryScene onBack={() => setView('roles')} />}
     </div>

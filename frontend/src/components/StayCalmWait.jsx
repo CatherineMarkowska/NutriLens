@@ -1,6 +1,6 @@
 import './StayCalmWait.css'
 
-function StayCalmWait() {
+function StayCalmWait({ onWorkEarn }) {
   return (
     <section className="stay-calm">
       <div className="stay-calm__card">
@@ -13,15 +13,16 @@ function StayCalmWait() {
       </div>
 
       <div className="stay-calm__status">
-        <p>
-          Savings: <strong>$1200</strong>
-        </p>
-        <p>
-          Employment: <strong>Bank Clerk</strong>
-        </p>
-        <p>
-          Family Morale: <strong>Stable</strong>
-        </p>
+        <p>Savings: $1200</p>
+        <p>Employment: Bank Clerk</p>
+        <p>Family Moral: Stable</p>
+      </div>
+      <div className="stay-calm__actions">
+        <button type="button">Decline overtime and rush home</button>
+        <button type="button" onClick={onWorkEarn}>
+          Work the counter and earn the money
+        </button>
+        <button type="button">Withdraw your savings</button>
       </div>
     </section>
   )
